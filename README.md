@@ -88,9 +88,9 @@ Sample: curl http://127.0.0.1:3000/users/637a0db02ad3631a74214773
 }
 ```
 
-PATCH /users/updateMe General: Returns updated data.
+PATCH /users/:id General: Returns updated data.
 
-Sample: curl -d {"name": "Okeowo Abdulqudus"} http://127.0.0.1:3000/users/updateMe -H "Content-Type: application/json" -X PATCH
+Sample: curl -d {"name": "Okeowo Abdulqudus"} http://127.0.0.1:3000/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X PATCH
 
 ```JSON
     {
@@ -107,9 +107,9 @@ Sample: curl -d {"name": "Okeowo Abdulqudus"} http://127.0.0.1:3000/users/update
 }
 ```
 
-DELETE /users/deleteMe General: Returns null.
+DELETE /users/:id General: Returns null.
 
-Sample: curl http://127.0.0.1:3000/users/deleteMe -H "Content-Type: application/json" -X DELETE
+Sample: curl http://127.0.0.1:3000/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X DELETE
 
 ```JSON
     {
