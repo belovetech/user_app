@@ -1,4 +1,4 @@
-const AppError = require('./../utils/appError');
+const AppError = require('../utils/appError');
 
 // DEVELOPMENT ERROR FORMAT
 const sendErrorDev = (err, res) => {

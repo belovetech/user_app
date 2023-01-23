@@ -1,7 +1,7 @@
 const AppError = require('../utils/appError');
 const APIfeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
-const User = require('./userModel');
+const User = require('../models/userModel');
 
 exports.getAllUsers = catchAsync(async (req, res, next) => {
   const features = new APIfeatures(User.find(), req.query)

@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './.config.env' });
 const fs = require('fs');
 
-const User = require('../../userMVC/userModel');
+const User = require('../../models/userModel');
 
 const mongoose = require('mongoose');
 

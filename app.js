@@ -2,8 +2,8 @@ const express = require('express');
 const mongoSanitizer = require('express-mongo-sanitize');
 const morgan = require('morgan');
 
-const userRouter = require('./userMVC/userRouter');
-const globalErrorHandler = require('./userMVC/errorController');
+const userRouter = require('./routes/userRouter');
+const globalErrorHandler = require('./controllers/errorController');
 
 // Express app
 const app = express();
@@ -23,6 +23,6 @@ app.use(mongoSanitizer());
 app.use('/api/v1/users', userRouter);
 
 // ERROR MIDDLEWARE
-// app.use(globalErrorHandler);
+app.use(globalErrorHandler);
 
 module.exports = app;
