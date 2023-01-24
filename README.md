@@ -1,5 +1,7 @@
 # user_app
 
+User_app is a simple RESTful API that performs CRUD functionalities on user's data.
+
 ## Getting started
 
 ### Installing Dependencies
