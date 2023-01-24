@@ -4,7 +4,7 @@
 
 ### Installing Dependencies
 
-Nodejs 16.18.0 Follow instructions to install the latest version of nodejs for your platform in the nodejs docs
+Nodejs 16.18.0 Follow instructions to install the latest version of nodejs for your platform in the [nodejs](https://nodejs.org/en/docs/) docs
 
 ### NPM Dependencies
 
@@ -15,9 +15,9 @@ This will install all of the required packages we selected within the package.js
 
 ### Key Dependencies
 
-Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
+[Express](http://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
 
-Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+[Mongoose](https://mongoosejs.com/) provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
 
 ### Running the server
 
@@ -28,13 +28,13 @@ From within the ./user_app directory
 
 ### Getting Started
 
-Base URL: Currently this application is only hosted locally. The backend is hosted at http://127.0.0.1:3000/api/v1
+Base URL: https://user-app-yfyx.onrender.com/api/v1/
 
 ### API Endpoints
 
 GET /users General: Returns all users.
 
-Sample: curl http://127.0.0.1:3000/users/
+Sample: curl https://user-app-yfyx.onrender.com/api/v1/users/
 
 ```JSON
     {
@@ -70,7 +70,7 @@ Sample: curl http://127.0.0.1:3000/users/
 
 GET /users/:id General: Returns user based on id.
 
-Sample: curl http://127.0.0.1:3000/users/637a0db02ad3631a74214773
+Sample: curl https://user-app-yfyx.onrender.com/api/v1/users/637a0db02ad3631a74214773
 
 ```JSON
     {
@@ -90,7 +90,7 @@ Sample: curl http://127.0.0.1:3000/users/637a0db02ad3631a74214773
 
 PATCH /users/:id General: Returns updated data.
 
-Sample: curl -d {"name": "Okeowo Abdulqudus"} http://127.0.0.1:3000/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X PATCH
+Sample: curl -d {"name": "Okeowo Abdulqudus"} https://user-app-yfyx.onrender.com/api/v1/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X PATCH
 
 ```JSON
     {
@@ -109,7 +109,7 @@ Sample: curl -d {"name": "Okeowo Abdulqudus"} http://127.0.0.1:3000/users/63ceb9
 
 DELETE /users/:id General: Returns null.
 
-Sample: curl http://127.0.0.1:3000/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X DELETE
+Sample: curl https://user-app-yfyx.onrender.com/api/v1/users/63ceb99a03b75aee4ab3f556 -H "Content-Type: application/json" -X DELETE
 
 ```JSON
     {
