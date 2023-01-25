@@ -73,7 +73,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 });
 
 exports.deleteUser = catchAsync(async (req, res, next) => {
-  const user = await User.findByIdAndDelete(req.params.id);
+  const user = await User.findByIdAndUpdate(req.params.id, { active: false });
 
   if (!user) {
     return next(new AppError('User was not found', 404));
